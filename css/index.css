@@ -6,3 +6,7 @@
     background-color: #0033DD;
     height:582px;
 }
+
+.ui-icon-cm-map {
+    background-image: url("../img/103-map.png");
+}
