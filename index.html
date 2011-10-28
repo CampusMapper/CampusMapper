@@ -7,38 +7,31 @@
         src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
 </head>
 <body>
-    <div data-role="page" data-url="map" id="map" data-title="CampusMapper">
-        <div data-role="header"><h1>CampusMapper</h1></div>
-        <div class="map-section" data-role="content" data-url="one" id="one">
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Campus Mapper</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Wireless</a></li>
+                <li><a href="#">Parking</a></li>
+            </ul>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Bookmark</a></li>
+            </ul>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Check In</a></li>
+            </ul>
         </div>
         <div data-role="footer">
-            <a href="#bookmarks" data-direction="reverse" class="footer-button" data-role="button">Bookmarks</a>
-            <a href="#settings" class="footer-button" data-role="button">Settings</a>
+            <h1>OBTRUSIVE AD</h1>
         </div>
-    </div>
-
-    <div data-role="page" data-url="bookmarks" id="bookmarks"
-        data-title="CampusMapper">
-        <div data-role="header"><h1>Bookmarks</h1></div>
-        <div class="map-section" data-role="content" data-url="two" id="two">
-        </div>
-        <div data-role="footer">
-            <a href="#settings" class="footer-button" data-direction="reverse" data-role="button">Settings</a>
-            <a href="#map" class="footer-button" data-role="button">Map</a>
-        </div>
-    </div>
-
-    <div data-role="page" data-url="settings" id="settings"
-        data-title="CampusMapper">
-        <div data-role="header"><h1>Settings</h1></div>
-        <div class="map-section" data-role="content" data-url="two" id="two">
-        </div>
-        <div data-role="footer">
-            <a href="#map" class="footer-button" data-role="button"
-                data-direction="reverse">Map</a>
-            <a href="#bookmarks" class="footer-button"
-                data-role="button">Bookmarks</a>
-        </div>
-    </div>
-    
+    </div> 
 </body>
