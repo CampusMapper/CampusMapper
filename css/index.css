@@ -1,12 +1,27 @@
-.footer-button {
-    width: 49.6%;
+div.cm-button {
+    margin: auto;
+    text-align: center;
 }
 
-.map-section {
-    background-color: #0033DD;
-    height:582px;
+div.cm-button-icon {
 }
 
-.ui-icon-cm-map {
-    background-image: url("../img/103-map.png");
+div.cm-button-label {
+}
+
+img.cm-button-icon {
+}
+
+label.cm-button-label {
+    color: #000;
+}
+
+a.cm-button-link-wrapper {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+a.cm-button-link-wrapper:hover {
+    background-color: #00AAFF;
 }
