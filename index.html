@@ -7,38 +7,78 @@
         src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
 </head>
 <body>
-    <div data-role="page" data-url="map" id="map" data-title="CampusMapper">
-        <div data-role="header"><h1>CampusMapper</h1></div>
-        <div class="map-section" data-role="content" data-url="one" id="one">
+    <div class="cm-page" data-role="page">
+        <div data-role="header">
+            <h1>Campus Mapper</h1>
         </div>
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/globe_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Map</label>
+                    </div>
+                </a>
+                </div>
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/table_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Schedule</label>
+                    </div>
+                </a>
+                </div>
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/speech_bubble_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Social</label>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/search_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Find...</label>
+                    </div>
+                </a>
+                </div>
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/star_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Bookmarks</label>
+                    </div>
+                </a>
+                </div>
+                <div class="cm-button">
+                <a class="cm-button-link-wrapper" href="#">
+                    <div class="cm-button-icon">
+                        <img class="cm-button-icon" src="img/user_48.png"></img>
+                    </div>
+                    <div class="cm-button-label">
+                        <label class="cm-button-label">Account</label>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </fieldset>
         <div data-role="footer">
-            <a href="#bookmarks" data-direction="reverse" class="footer-button" data-role="button">Bookmarks</a>
-            <a href="#settings" class="footer-button" data-role="button">Settings</a>
+            <h1></h1>
         </div>
-    </div>
-
-    <div data-role="page" data-url="bookmarks" id="bookmarks"
-        data-title="CampusMapper">
-        <div data-role="header"><h1>Bookmarks</h1></div>
-        <div class="map-section" data-role="content" data-url="two" id="two">
-        </div>
-        <div data-role="footer">
-            <a href="#settings" class="footer-button" data-direction="reverse" data-role="button">Settings</a>
-            <a href="#map" class="footer-button" data-role="button">Map</a>
-        </div>
-    </div>
-
-    <div data-role="page" data-url="settings" id="settings"
-        data-title="CampusMapper">
-        <div data-role="header"><h1>Settings</h1></div>
-        <div class="map-section" data-role="content" data-url="two" id="two">
-        </div>
-        <div data-role="footer">
-            <a href="#map" class="footer-button" data-role="button"
-                data-direction="reverse">Map</a>
-            <a href="#bookmarks" class="footer-button"
-                data-role="button">Bookmarks</a>
-        </div>
-    </div>
-    
+    </div> 
 </body>

@@ -1,8 +1,35 @@
-.footer-button {
-    width: 49.6%;
+div.cm-button {
+    margin: auto;
+    text-align: center;
 }
 
-.map-section {
-    background-color: #0033DD;
-    height:582px;
+div.cm-button-icon {
+}
+
+div.cm-button-label {
+}
+
+img.cm-button-icon {
+}
+
+label.cm-button-label {
+    color: #000;
+}
+
+a.cm-button-link-wrapper {
+    text-decoration: none;
+    display: block;
+    padding: 77px 0 77px 0;
+}
+
+a.cm-button-link-wrapper:active {
+    background-color: #00AAFF;
+}
+
+h1 {
+    font-size: 3em !important;
+}
+
+div.cm-page {
+    height: 1000px !important;
 }
