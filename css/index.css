@@ -31,5 +31,5 @@ h1 {
 }
 
 div.cm-page {
-    height: 800px !important;
+    height: 100% !important;
 }
