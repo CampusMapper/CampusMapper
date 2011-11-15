@@ -3,14 +3,12 @@ span.cm-dialog-class-at {
     font-weight: bold;
 }
 
-span.cm-dialog-time {
-    padding-bottom: 200px;
-}
-
 div.cm-dialog-navbar {
     font-size: 2em !important;
+    padding-bottom: 200px;
 }
 
 div.cm-dialog-wrapper {
     clear: both;
+    width: 90%px;
 }
