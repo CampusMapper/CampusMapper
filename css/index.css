@@ -14,12 +14,6 @@ img.cm-button-icon {
     height: 128px;
 }
 
-img.cm-thumb-img {
-    width: 80px;
-    height: 80px;
-    margin: auto;
-}
-
 label.cm-button-label {
     color: #000;
     font-size: 2em;
