@@ -4,7 +4,7 @@ $(document).ready(function() {
     var footer_height = $("div.ui-footer").height();
 
     var height = total_height - header_height - footer_height;
-    var padding = height/6 - 24; // 24 is half the size of an icon.
+    var padding = height/6 - 64; // 64 is half the size of an icon.
 
     $("a.cm-button-link-wrapper").css("padding-top", "" + padding);
     $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);

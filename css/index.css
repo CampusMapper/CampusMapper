@@ -10,6 +10,8 @@ div.cm-button-label {
 }
 
 img.cm-button-icon {
+    width: 128px;
+    height: 128px;
 }
 
 label.cm-button-label {
