@@ -23,6 +23,7 @@ div.cm-save-location {
 
 div.cm-checkins {
     clear:both;
+    padding-left: 10px;
 }
 
 span.cm-details-description-header {
