@@ -7,3 +7,7 @@ span.cm-dialog-class-at {
 span.cm-dialog-time {
     padding-bottom: 200px;
 }
+
+div.cm-dialog-navbar {
+    font-size: 2em;
+}
