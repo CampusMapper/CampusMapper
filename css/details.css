@@ -1,0 +1,41 @@
+div.cm-details-description {
+    clear: both;
+}
+
+div.cm-details-description-col1 {
+    width: 48%;
+    float: left;
+}
+
+div.cm-details-description-col2 {
+    width: 48%;
+    float: right;
+    clear: right;
+}
+
+div.cm-save-location {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+span.cm-details-description-header {
+}
+
+span.cm-building-name {
+    font-size: 3em;
+    float: left;
+}
+
+img.cm-bookmark {
+    width: 80px;
+    height: 80px;
+}
+
+ul.cm-hours {
+}
+
+ul.cm-checkins {
+}
+
+
