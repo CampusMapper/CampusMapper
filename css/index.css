@@ -29,6 +29,11 @@ a.cm-button-link-wrapper {
     display: block;
 }
 
+a.cm-full-footer-button {
+    display: block;
+    width: 100%;
+}
+
 h1 {
     font-size: 3em !important;
 }
