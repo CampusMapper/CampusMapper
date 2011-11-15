@@ -3,20 +3,21 @@ div.cm-details-description {
 }
 
 div.cm-details-description-col1 {
+    padding-left: 10px;
     width: 48%;
     float: left;
 }
 
 div.cm-details-description-col2 {
+    padding-right: 10px;
     width: 48%;
     float: right;
     clear: right;
+    text-align: center;
 }
 
 div.cm-save-location {
-    width: 40%;
     float: right;
-    text-align: right;
 }
 
 span.cm-details-description-header {
@@ -30,6 +31,11 @@ span.cm-building-name {
 img.cm-bookmark {
     width: 80px;
     height: 80px;
+}
+
+img.cm-building-image {
+    width: 90%;
+    height: 90%;
 }
 
 ul.cm-hours {
