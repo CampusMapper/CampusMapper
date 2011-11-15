@@ -17,6 +17,7 @@ img.cm-button-icon {
 img.cm-thumb-img {
     width: 80px;
     height: 80px;
+    margin: auto;
 }
 
 label.cm-button-label {
@@ -39,6 +40,16 @@ h1 {
 
 h3 {
     font-size: 3em !important;
+}
+
+span.cm-location {
+    font-size: 2em !important;
+    float: left;
+}
+
+span.cm-time {
+    font-size: 2em !important;
+    float: right;
 }
 
 [data-role=page]{height: 100% !important; position:relative !important;}
