@@ -29,10 +29,6 @@ a.cm-button-link-wrapper {
     display: block;
 }
 
-a.cm-button-link-wrapper:hover {
-    background-color: #00AAFF;
-}
-
 h1 {
     font-size: 3em !important;
 }
