@@ -29,7 +29,7 @@ a.cm-button-link-wrapper {
     display: block;
 }
 
-a.cm-button-link-wrapper:active {
+a.cm-button-link-wrapper:hover {
     background-color: #00AAFF;
 }
 
