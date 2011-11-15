@@ -5,3 +5,8 @@ div.cm-search {
 input#searc-basic {
     padding: 35px;
 }
+
+div.cm-button {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
