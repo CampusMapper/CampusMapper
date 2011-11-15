@@ -10,5 +10,8 @@ div.cm-dialog-navbar {
 
 div.cm-dialog-wrapper {
     clear: both;
+}
+
+div.cm-dialog {
     width: 90%;
 }
