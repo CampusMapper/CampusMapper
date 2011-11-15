@@ -20,6 +20,10 @@ div.cm-save-location {
     float: right;
 }
 
+div.cm-checkins {
+    clear:both;
+}
+
 span.cm-details-description-header {
 }
 
