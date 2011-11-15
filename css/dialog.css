@@ -3,15 +3,6 @@ span.cm-dialog-class-at {
     font-weight: bold;
 }
 
-div.cm-dialog-navbar {
-    font-size: 2em !important;
-    padding-bottom: 200px;
-}
-
 div.cm-dialog-wrapper {
     clear: both;
-}
-
-div.cm-dialog {
-    width: 150%;
 }
