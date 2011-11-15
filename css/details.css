@@ -1,5 +1,6 @@
 div.cm-details-description {
     clear: both;
+    font-size: 2em;
 }
 
 div.cm-details-description-col1 {
@@ -31,6 +32,8 @@ span.cm-details-description-header {
 span.cm-building-name {
     font-size: 3em;
     float: left;
+    line-height: 80px;
+    vertical-align: middle;
 }
 
 img.cm-bookmark {
