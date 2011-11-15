@@ -25,6 +25,7 @@ div.cm-checkins {
 }
 
 span.cm-details-description-header {
+    font-weight: bold;
 }
 
 span.cm-building-name {
