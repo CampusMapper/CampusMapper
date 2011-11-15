@@ -1,7 +1,6 @@
 span.cm-dialog-class-at {
     font-size: 2em;
     font-weight: bold;
-    clear: both;
 }
 
 span.cm-dialog-time {
@@ -9,5 +8,9 @@ span.cm-dialog-time {
 }
 
 div.cm-dialog-navbar {
-    font-size: 2em;
+    font-size: 2em !important;
+}
+
+div.cm-dialog-wrapper {
+    clear: both;
 }
