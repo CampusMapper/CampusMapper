@@ -11,4 +11,5 @@ $(document).ready(function() {
         $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
     }
 
+    resizeItems();
 });
