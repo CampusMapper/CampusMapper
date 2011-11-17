@@ -1,84 +1,72 @@
-<head>
-    <! -- need social javascript -->
-    <link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css"
-    rel="stylesheet" type="text/css" />
-    <link href="css/index.css" rel="stylesheet" typ="text/css" />
-    <link href="css/find.css" rel="stylesheet" typ="text/css" />
-    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-    <script 
-        src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
-</head>
-<body>
-    <div class="cm-page" data-role="page">
-        <div data-role="header">
-            <a href="find.html" data-rel="back" data-direction="reverse"
-                ><img class="cm-header-icon" src="img/arrow_left_48.png" /></a>
-            <h1>Search Map</h1>
-            <a href="index.html" data-direction="reverse" >
-                <img class="cm-header-icon" src="img/home_48.png" /></a>
-        </div>
-        <div class="cm-content">
-            <div class="cm-search">
-                <input type="search" name="search" id="searc-basic" value="" />
-            </div>
-            <hr />
-            <fieldset class="ui-grid-a">
-                <div class="ui-block-a">
-                    <div class="cm-button">
-                        <a class="cm-button-link-wrapper"
-                            href="map.html?query=classroom" >
-                            <div class="cm-button-icon">
-                                <img class="cm-button-icon" 
-                                    src="img/classroom.png" />
-                            </div>
-                            <div class="cm-button-label">
-                                <label class="cm-button-label">Classroom</label>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cm-button">
-                        <a class="cm-button-link-wrapper"
-                            href="map.html?query=restaurants" >
-                            <div class="cm-button-icon">
-                                <img class="cm-button-icon" 
-                                    src="img/restaurant.png" />
-                            </div>
-                            <div class="cm-button-label">
-                                <label class="cm-button-label">Restaurants</label>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="ui-block-b">
-                    <div class="cm-button">
-                        <a class="cm-button-link-wrapper"
-                            href="map.html?query=wireless" >
-                            <div class="cm-button-icon">
-                                <img class="cm-button-icon" 
-                                    src="img/wireless.png" />
-                            </div>
-                            <div class="cm-button-label">
-                                <label class="cm-button-label">Wireless Hotspots</label>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cm-button">
-                        <a class="cm-button-link-wrapper"
-                            href="map.html?query=parking" >
-                            <div class="cm-button-icon">
-                                <img class="cm-button-icon" 
-                                    src="img/parking.png" />
-                            </div>
-                            <div class="cm-button-label">
-                                <label class="cm-button-label">Parking</label>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-        <div data-role="footer">
-            <h1></h1>
-        </div>
+<div class="cm-page" data-role="page">
+    <div data-role="header">
+        <a href="find.html" data-rel="back" data-direction="reverse"
+            ><img class="cm-header-icon" src="img/arrow_left_48.png" /></a>
+        <h1>Search Map</h1>
+        <a href="index.html" data-direction="reverse" >
+            <img class="cm-header-icon" src="img/home_48.png" /></a>
     </div>
-</body>
+    <div class="cm-content">
+        <div class="cm-search">
+            <input type="search" name="search" id="searc-basic" value="" />
+        </div>
+        <hr />
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <div class="cm-button">
+                    <a class="cm-button-link-wrapper"
+                        href="map.html?query=classroom" >
+                        <div class="cm-button-icon">
+                            <img class="cm-button-icon" 
+                                src="img/classroom.png" />
+                        </div>
+                        <div class="cm-button-label">
+                            <label class="cm-button-label">Classroom</label>
+                        </div>
+                    </a>
+                </div>
+                <div class="cm-button">
+                    <a class="cm-button-link-wrapper"
+                        href="map.html?query=restaurants" >
+                        <div class="cm-button-icon">
+                            <img class="cm-button-icon" 
+                                src="img/restaurant.png" />
+                        </div>
+                        <div class="cm-button-label">
+                            <label class="cm-button-label">Restaurants</label>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="cm-button">
+                    <a class="cm-button-link-wrapper"
+                        href="map.html?query=wireless" >
+                        <div class="cm-button-icon">
+                            <img class="cm-button-icon" 
+                                src="img/wireless.png" />
+                        </div>
+                        <div class="cm-button-label">
+                            <label class="cm-button-label">Wireless Hotspots</label>
+                        </div>
+                    </a>
+                </div>
+                <div class="cm-button">
+                    <a class="cm-button-link-wrapper"
+                        href="map.html?query=parking" >
+                        <div class="cm-button-icon">
+                            <img class="cm-button-icon" 
+                                src="img/parking.png" />
+                        </div>
+                        <div class="cm-button-label">
+                            <label class="cm-button-label">Parking</label>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div data-role="footer">
+        <h1></h1>
+    </div>
+</div>
