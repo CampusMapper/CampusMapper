@@ -49,4 +49,6 @@ $(document).ready(function() {
         alert(query);
         alert(document.referrer);
     }
+
+    init();
 });
