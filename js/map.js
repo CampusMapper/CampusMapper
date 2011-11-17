@@ -47,7 +47,7 @@ $(document).ready(function() {
         var query = getUrlVars();
         var src = 'img/' + query['query'] + '_map.png';
 
-        if(src === 'undefined_map.png') {
+        if(src === 'img/undefined_map.png') {
             src = 'img/blank_map.png';
         }
 
