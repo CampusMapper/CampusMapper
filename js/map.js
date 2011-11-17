@@ -45,10 +45,10 @@ $(document).ready(function() {
 
     function init() {
         var query = getUrlVars();
-        var src = query['query'] + '_map.png';
+        var src = 'img/' + query['query'] + '_map.png';
 
         if(src === 'undefined_map.png') {
-            src = 'blank_map.png';
+            src = 'img/blank_map.png';
         }
 
         $('#map_container').attr('src', src);
