@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    function() resizeItems() {
+    function resizeItems() {
         var total_height = $(document).height();
         var header_height = $("div.ui-header").height();
         var footer_height = $("div.ui-footer").height();
