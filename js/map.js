@@ -44,14 +44,37 @@ $(document).ready(function() {
     }
 
     function init() {
-        var query = getUrlVars();
-        var src = 'img/' + query['query'] + '_map.png';
+
+        var saved = getCookie('query');
+        var query;
+
+        if(saved === null || saved === '') {
+            query = getUrlVars();
+            query = query['query'];
+        } else {
+            query = saved;
+        }
+
+        var src = 'img/' + query + '_map.png';
 
         if(src === 'img/undefined_map.png') {
             src = 'img/blank_map.png';
         }
 
         $('#map_container').attr('src', src);
+        $('#map_container').click(function() {
+            var query = getCookie('query');
+            var src;
+
+            if(query === '') {
+                src = 'img/blank_map.png'
+            } else {
+                src = 'img/' + query + '_bubble_map.png';
+            }
+
+            $(this).attr('src', src);
+        });
+
     }
 
     function resizeItems() {
