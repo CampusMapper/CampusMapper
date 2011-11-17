@@ -47,8 +47,8 @@ $(document).ready(function() {
         var query = getUrlVars();
 
         alert(query);
-        alert(document.referrer);
     }
-
+    
+    $('#index').live('pageshow', function() { deleteCookie('query'); });
     $('#map').live('pageshow', function() { init() } );
 });
