@@ -51,6 +51,7 @@ $(document).ready(function() {
         if(saved === null || saved === '') {
             query = getUrlVars();
             query = query['query'];
+            setCookie('query', query);
         } else {
             query = saved;
         }
@@ -66,7 +67,7 @@ $(document).ready(function() {
             var query = getCookie('query');
             var src;
 
-            if(query === '') {
+            if(query === '' || query === null) {
                 src = 'img/blank_map.png'
             } else {
                 src = 'img/' + query + '_bubble_map.png';
