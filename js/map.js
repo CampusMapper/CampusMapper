@@ -50,5 +50,5 @@ $(document).ready(function() {
         alert(document.referrer);
     }
 
-    init();
+    $('#map').live('pageshow', function() { init() } );
 });
