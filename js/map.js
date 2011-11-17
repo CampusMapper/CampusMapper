@@ -47,8 +47,14 @@ $(document).ready(function() {
         var query = getUrlVars();
 
         alert(query['query']);
+
+        
     }
     
-    $('#index').live('pageshow', function() { deleteCookie('query'); });
+    $('#index').live('pageshow', function() { 
+        deleteCookie('query'); 
+        resizeItems();
+    });
+
     $('#map').live('pageshow', function() { init() } );
 });

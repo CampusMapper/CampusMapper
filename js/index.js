@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function() resizeItems() {
     var total_height = $(document).height();
     var header_height = $("div.ui-header").height();
     var footer_height = $("div.ui-footer").height();
@@ -8,4 +8,4 @@ $(document).ready(function() {
 
     $("a.cm-button-link-wrapper").css("padding-top", "" + padding);
     $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
-});
+};
