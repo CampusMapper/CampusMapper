@@ -67,7 +67,7 @@ $(document).ready(function() {
             var query = getCookie('query');
             var src;
 
-            if(query === '' || query === null) {
+            if(query === '' || query === null || query === 'undefined') {
                 src = 'img/blank_map.png'
             } else {
                 src = 'img/' + query + '_bubble_map.png';
