@@ -10,4 +10,6 @@ $(document).ready(function() {
         $("a.cm-button-link-wrapper").css("padding-top", "" + padding);
         $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
     }
+
+    resizeItems();
 });
