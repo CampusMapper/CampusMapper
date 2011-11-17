@@ -46,7 +46,7 @@ $(document).ready(function() {
     function init() {
         var query = getUrlVars();
 
-        alert(query);
+        alert(query['query']);
     }
     
     $('#index').live('pageshow', function() { deleteCookie('query'); });
