@@ -45,10 +45,13 @@ $(document).ready(function() {
 
     function init() {
         var query = getUrlVars();
+        var src = query['query'] + '_map.png';
 
-        alert(query['query']);
+        if(src === '_map.png') {
+            src = 'blank_map.png';
+        }
 
-        
+        $('#map_container').attr('src', src);
     }
 
     function resizeItems() {
