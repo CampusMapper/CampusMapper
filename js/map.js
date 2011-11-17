@@ -48,7 +48,7 @@ $(document).ready(function() {
         var saved = getCookie('query');
         var query;
 
-        if(saved === null || saved === '') {
+        if(saved === null || saved === '' || saved === 'undefined') {
             query = getUrlVars();
             query = query['query'];
             setCookie('query', query);
