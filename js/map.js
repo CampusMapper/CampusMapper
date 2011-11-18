@@ -125,6 +125,7 @@ $(document).ready(function() {
     function details() {
         $('.cm-bookmark').click(function() {
             var saved = getCookie('saved');
+            alert('hi');
 
             if(saved === null || saved === '' || saved === 'undefined') {
                 setCookie('saved', 'true');
