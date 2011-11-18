@@ -74,7 +74,7 @@ $(document).ready(function() {
             var src;
 
             if(query === '' || query === null || query === 'undefined') {
-                src = 'img/blank_map.png'
+                src = 'img/blank_bubble_map.png'
             } else {
                 src = 'img/' + query + '_bubble_map.png';
             }
