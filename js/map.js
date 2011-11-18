@@ -56,6 +56,10 @@ $(document).ready(function() {
             query = saved;
         }
 
+        if(getUrlVars() !== 'undefined') {
+            query = getUrlVars();
+        }
+
         var src = 'img/' + query + '_map.png';
 
         if(src === 'img/undefined_map.png') {
