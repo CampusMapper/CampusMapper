@@ -70,7 +70,7 @@ $(document).ready(function() {
             direction = getCookie('directions');
         }
         
-        if(directions === 'true') {
+        if(direction === 'true') {
             var src = 'img/' + query + '_directions_map.png';
 
             if(src === 'img/undefined_directions_map.png') {
