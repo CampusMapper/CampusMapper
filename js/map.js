@@ -58,6 +58,7 @@ $(document).ready(function() {
 
         if(getUrlVars() != 'undefined') {
             query = getUrlVars();
+            quert = query['query'];
         }
 
         var src = 'img/' + query + '_map.png';
