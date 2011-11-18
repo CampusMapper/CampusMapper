@@ -58,11 +58,10 @@ $(document).ready(function() {
             query = saved;
         }
 
-        if(params['query'] !== 'undefined') {
+        if( "" + params['query'] !== 'undefined') {
             query = params['query'];
             setCookie('query', query);
             deleteCookie('directions');
-            alert('asdf');
         }
 
         if(direction === 'true') {
