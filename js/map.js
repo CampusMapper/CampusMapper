@@ -132,7 +132,7 @@ $(document).ready(function() {
                 $(this).attr('src', 'img/bookmark_yellow.png');
             } else {
                 deleteCookie('saved');
-                $(this).attr('src', 'img/bookmark_gray.png');
+                $(this).attr('src', 'img/bookmark_grey.png');
             }
         });
     }
