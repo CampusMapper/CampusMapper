@@ -122,24 +122,22 @@ $(document).ready(function() {
         $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
     }
 
-    function toggleBookmark() {
+    function toggleBookmark(target) {
         var saved = getCookie('saved');
         
-        alert('hi');
-
         if(saved === null || saved === '' || saved === 'undefined') {
             setCookie('saved', 'true');
-            $(this).attr('src', 'img/bookmark_yellow.png');
+            $(target).attr('src', 'img/bookmark_yellow.png');
         } else {
             deleteCookie('saved');
-            $(this).attr('src', 'img/bookmark_grey.png');
+            $(target).attr('src', 'img/bookmark_grey.png');
         }
     }
 
     function details() {
-        toggleBookmark();
-        toggleBookmark();
-        $('.cm-bookmark').click(function () { toggleBookmark() });
+        toggleBookmark('.cm-bookmark');
+        toggleBookmark('.cm-bookmark');
+        $('.cm-bookmark').click(function () { toggleBookmark(this) });
     }
 
 
