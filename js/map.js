@@ -59,6 +59,7 @@ $(document).ready(function() {
         if(getUrlVars() != 'undefined') {
             query = getUrlVars();
             query = query['query'];
+            setCookie('query', query);
         }
 
         var src = 'img/' + query + '_map.png';
