@@ -56,7 +56,7 @@ $(document).ready(function() {
             query = saved;
         }
 
-        if(getUrlVars() !== 'undefined') {
+        if(getUrlVars() != 'undefined') {
             query = getUrlVars();
         }
 
