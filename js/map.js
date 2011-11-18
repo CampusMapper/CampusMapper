@@ -122,19 +122,22 @@ $(document).ready(function() {
         $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
     }
 
-    function details() {
-        $('.cm-bookmark').click(function() {
-            var saved = getCookie('saved');
-            alert('hi');
+    function toggleBookmark() {
+        var saved = getCookie('saved');
 
-            if(saved === null || saved === '' || saved === 'undefined') {
-                setCookie('saved', 'true');
-                $(this).attr('src', 'img/bookmark_yellow.png');
-            } else {
-                deleteCookie('saved');
-                $(this).attr('src', 'img/bookmark_grey.png');
-            }
-        });
+        if(saved === null || saved === '' || saved === 'undefined') {
+            setCookie('saved', 'true');
+            $(this).attr('src', 'img/bookmark_yellow.png');
+        } else {
+            deleteCookie('saved');
+            $(this).attr('src', 'img/bookmark_grey.png');
+        }
+    }
+
+    function details() {
+        toggleBookmark();
+        toggleBookmark();
+        $('cm-bookmark').click(function () { toggleBookmark() });
     }
 
 
