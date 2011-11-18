@@ -62,6 +62,7 @@ $(document).ready(function() {
             query = params['query'];
             setCookie('query', query);
             deleteCookie('directions');
+            alert('asdf');
         }
 
         if(direction === 'true') {
