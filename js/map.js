@@ -137,7 +137,7 @@ $(document).ready(function() {
     function details() {
         toggleBookmark();
         toggleBookmark();
-        $('cm-bookmark').click(function () { toggleBookmark() });
+        $('.cm-bookmark').click(function () { toggleBookmark() });
     }
 
 
