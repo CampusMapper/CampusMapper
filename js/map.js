@@ -65,7 +65,7 @@ $(document).ready(function() {
         }
 
         if(direction === 'true') {
-            saveCookie('directions', 'true');
+            setCookie('directions', 'true');
         } else {
             direction = getCookie('directions');
         }
