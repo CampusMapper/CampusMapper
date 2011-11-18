@@ -80,6 +80,9 @@ $(document).ready(function() {
             }
 
             $(this).attr('src', src);
+            $(this).click(function() {
+                $.mobile.changePage("details.html");
+            });
         });
 
     }
