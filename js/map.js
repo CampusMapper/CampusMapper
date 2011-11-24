@@ -59,7 +59,7 @@ $(document).ready(function() {
         }
 
         if( "" + params['query'] !== 'undefined') {
-            query = params['query'];
+		 query = params['query'];
             setCookie('query', query);
             deleteCookie('directions');
         }
@@ -69,8 +69,16 @@ $(document).ready(function() {
         } else {
             direction = getCookie('directions');
         }
-        
+
         if(direction === 'true') {
+		
+		/************* LIST BUTTON ****************/
+		document.getElementById("list").style.display="block"; 
+		 $('#list').click(function() {
+                $.mobile.changePage('listdirections.html');
+            });
+		/******************************************/
+
             var src = 'img/' + query + '_directions_map.png';
 
             if(src === 'img/undefined_directions_map.png') {
@@ -83,11 +91,23 @@ $(document).ready(function() {
             });
 
         } else {
+
+		/************** LIST BUTTON *****************/
+		document.getElementById("list").style.display="block";
+		 $('#list').click(function() {
+                $.mobile.changePage('listoptions.html');
+            });
+		/******************************************/
+
             var src = 'img/' + query + '_map.png';
 
             if(src === 'img/undefined_map.png') {
                 src = 'img/blank_map.png';
-            }
+
+			/************** LIST BUTTON *****************/
+			document.getElementById("list").style.display="none";
+			/******************************************/
+		}
 
             $('#map_container').attr('src', src);
 
