@@ -39,9 +39,26 @@
     function deleteCookie(name) {
         setCookie(name,"",-1);
     }
+    
+    function remove_map_classes() {
+        var objects = $('.map_container');
+        objects.removeClass('.cm-blank_map');
+        objects.removeClass('.cm-blank_bubble_map');
+        objects.removeClass('.cm-blank_directions_map');
+        objects.removeClass('.cm-wireless_map');
+        objects.removeClass('.cm-wireless_bubble_map');
+        objects.removeClass('.cm-wireless_directions_map');
+        objects.removeClass('.cm-parking_map');
+        objects.removeClass('.cm-parking_bubble_map');
+        objects.removeClass('.cm-parking_directions_map');
+        objects.removeClass('.cm-restaurant_map');
+        objects.removeClass('.cm-restaurant_bubble_map');
+        objects.removeClass('.cm-restaurant_directions_map');
+    }
 
-    var last_class = "";
     function init() {
+
+        remove_map_classes();
 
         var saved = getCookie('query');
         var params = getUrlVars();
