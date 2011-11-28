@@ -52,8 +52,6 @@ span.cm-time {
     float: right;
 }
 
-[data-role=page]{height: 100% !important; position:relative !important;}
-[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}  
 
 #list{
       position:fixed;
@@ -65,3 +63,7 @@ span.cm-time {
 .list-float{
 	float:left;
 }
+
+
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}  
