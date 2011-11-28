@@ -52,10 +52,17 @@ span.cm-time {
     float: right;
 }
 
+#cm-map-wrapper {
+    width: 100%;
+    height: 80%;
+}
+
 #map_container {
     background-repeat:no-repeat;
     background-position:center;
-    /* background-size: 100% 80%; */
+    background-size: 100% 80%;
+    width: 100%;
+    height: 100%;
 }
 
 #list{
