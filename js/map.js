@@ -45,6 +45,8 @@ $(document).ready(function() {
 
     function init() {
 
+        $('#map_container').removeClass();
+
         var saved = getCookie('query');
         var params = getUrlVars();
         var query;
@@ -158,7 +160,6 @@ $(document).ready(function() {
         toggleBookmark('.cm-bookmark');
         $('.cm-bookmark').click(function () { toggleBookmark(this) });
     }
-
 
     $('#index').live('pageshow', function() { 
         resizeItems();
