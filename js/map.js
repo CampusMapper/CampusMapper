@@ -79,15 +79,11 @@ $(document).ready(function() {
             });
 		/******************************************/
 
-            var src = 'img/' + query + '_directions_map.png';
-
             if(src === 'img/undefined_directions_map.png') {
                 src = 'img/blank_directions_map.png';
             }
 
-            alert("GO");
-
-            $('#map_container').attr('src', src);
+            $('#map_container').css('background-image', 'url(' + src + ')');
             $('#map_container').click(function() {
                 $.mobile.changePage('details.html');
             });
@@ -112,7 +108,7 @@ $(document).ready(function() {
 			/******************************************/
             alert(src);
 
-            $('#map_container').attr('src', src);
+            $('#map_container').css('background-image', 'url(' + src + ')');
 
             $('#map_container').click(function() {
                 var query = getCookie('query');

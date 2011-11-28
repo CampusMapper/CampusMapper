@@ -52,6 +52,10 @@ span.cm-time {
     float: right;
 }
 
+#map_container {
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
 #list{
       position:fixed;
