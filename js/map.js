@@ -42,21 +42,21 @@
     
     function remove_map_classes() {
         var objects = $('.map_container');
-        objects.removeClass('.cm-blank_map');
-        objects.removeClass('.cm-blank_bubble_map');
-        objects.removeClass('.cm-blank_directions_map');
-        objects.removeClass('.cm-wireless_map');
-        objects.removeClass('.cm-wireless_bubble_map');
-        objects.removeClass('.cm-wireless_directions_map');
-        objects.removeClass('.cm-parking_map');
-        objects.removeClass('.cm-parking_bubble_map');
-        objects.removeClass('.cm-parking_directions_map');
-        objects.removeClass('.cm-restaurant_map');
-        objects.removeClass('.cm-restaurant_bubble_map');
-        objects.removeClass('.cm-restaurant_directions_map');
-        objects.removeClass('.cm-classroom_map');
-        objects.removeClass('.cm-classroom_bubble_map');
-        objects.removeClass('.cm-classroom_directions_map');
+        objects.removeClass('cm-blank_map');
+        objects.removeClass('cm-blank_bubble_map');
+        objects.removeClass('cm-blank_directions_map');
+        objects.removeClass('cm-wireless_map');
+        objects.removeClass('cm-wireless_bubble_map');
+        objects.removeClass('cm-wireless_directions_map');
+        objects.removeClass('cm-parking_map');
+        objects.removeClass('cm-parking_bubble_map');
+        objects.removeClass('cm-parking_directions_map');
+        objects.removeClass('cm-restaurant_map');
+        objects.removeClass('cm-restaurant_bubble_map');
+        objects.removeClass('cm-restaurant_directions_map');
+        objects.removeClass('cm-classroom_map');
+        objects.removeClass('cm-classroom_bubble_map');
+        objects.removeClass('cm-classroom_directions_map');
     }
 
     function init() {
