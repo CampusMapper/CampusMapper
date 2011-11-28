@@ -108,8 +108,6 @@ $(document).ready(function() {
 			/************** LIST BUTTON *****************/
 			document.getElementById("list").style.display="none";
 			/******************************************/
-            alert(src);
-
             $('#map_container').addClass(src);
 
             $('#map_container').click(function() {
