@@ -80,9 +80,9 @@
             if(src === 'cm-undefined_directions_map') {
                 src = 'cm-blank_directions_map';
             }
-            $('#map_container').addClass(src);
+            $('.map_container').addClass(src);
 
-            $('#map_container').click(function() {
+            $('.map_container').click(function() {
                 $.mobile.changePage('details.html');
             });
 
@@ -104,10 +104,10 @@
 			/************** LIST BUTTON *****************/
 			document.getElementById("list").style.display="none";
 			/******************************************/
-            $('#map_container').addClass(src);
+            $('.map_container').addClass(src);
             alert(src);
 
-            $('#map_container').click(function() {
+            $('.map_container').click(function() {
                 var query = getCookie('query');
                 var src;
 
