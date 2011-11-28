@@ -44,7 +44,6 @@ $(document).ready(function() {
     }
 
     function init() {
-        alert("map");
 
         var saved = getCookie('query');
         var params = getUrlVars();
@@ -86,6 +85,8 @@ $(document).ready(function() {
                 src = 'img/blank_directions_map.png';
             }
 
+            alert("GO");
+
             $('#map_container').attr('src', src);
             $('#map_container').click(function() {
                 $.mobile.changePage('details.html');
@@ -104,11 +105,12 @@ $(document).ready(function() {
 
             if(src === 'img/undefined_map.png') {
                 src = 'img/blank_map.png';
+            }
 
 			/************** LIST BUTTON *****************/
 			document.getElementById("list").style.display="none";
 			/******************************************/
-		}
+            alert(src);
 
             $('#map_container').attr('src', src);
 
