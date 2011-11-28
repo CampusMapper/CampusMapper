@@ -153,12 +153,12 @@
     function details() {
         toggleBookmark('.cm-bookmark');
         toggleBookmark('.cm-bookmark');
-        $('.cm-bookmark').click(function () { toggleBookmark(this) });
+        $('.cm-bookmark').click(function () { toggleBookmark(this); });
     }
 
     $('#index').live('pageshow', function() { 
         resizeItems();
     });
 
-    $('#map').live('pageshow', function() { init() } );
-    $('#details').live('pageshow', function() { details() } );
+    $('#map').live('pageshow', function() { alert('mapshow'); init(); } );
+    $('#details').live('pageshow', function() { details(); } );
