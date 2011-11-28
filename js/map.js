@@ -43,7 +43,6 @@
     function init() {
 
         $('#map_container').removeClass();
-        alert('zomg');
 
         var saved = getCookie('query');
         var params = getUrlVars();
@@ -89,6 +88,7 @@
             });
 
         } else {
+        alert('zomg');
 
 		/************** LIST BUTTON *****************/
 		document.getElementById("list").style.display="block";
