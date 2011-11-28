@@ -44,6 +44,7 @@ $(document).ready(function() {
     }
 
     function init() {
+        alert("map");
 
         var saved = getCookie('query');
         var params = getUrlVars();
@@ -162,8 +163,6 @@ $(document).ready(function() {
 
 
     $('#index').live('pageshow', function() { 
-        deleteCookie('query'); 
-        deleteCookie('directions');
         resizeItems();
     });
 
