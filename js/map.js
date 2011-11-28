@@ -43,6 +43,7 @@
     function init() {
 
         $('#map_container').removeClass();
+        alert('zomg');
 
         var saved = getCookie('query');
         var params = getUrlVars();
@@ -160,5 +161,5 @@
         resizeItems();
     });
 
-    $('#map').live('pageshow', function() { alert('mapshow'); init(); } );
+    $('#map').live('pageshow', function() { init(); } );
     $('#details').live('pageshow', function() { details(); } );
