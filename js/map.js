@@ -1,6 +1,3 @@
-$(document).ready(function() {
-
-    // gets url parameters
     function getUrlVars() {
         var vars = [], hash;
         var hashes =
@@ -165,6 +162,3 @@ $(document).ready(function() {
 
     $('#map').live('pageshow', function() { init() } );
     $('#details').live('pageshow', function() { details() } );
-
-    init();
-});
