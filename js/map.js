@@ -40,9 +40,10 @@
         setCookie(name,"",-1);
     }
 
+    var last_class = "";
     function init() {
 
-        $('#map_container').removeClass();
+        $('#map_container').removeClass(last_class);
 
         var saved = getCookie('query');
         var params = getUrlVars();
@@ -82,6 +83,7 @@
                 src = 'cm-blank_directions_map';
             }
             $('#map_container').addClass(src);
+            last_class = src;
 
             $('#map_container').click(function() {
                 $.mobile.changePage('details.html');
@@ -106,6 +108,7 @@
 			document.getElementById("list").style.display="none";
 			/******************************************/
             $('#map_container').addClass(src);
+            last_class = src;
             alert(src);
 
             $('#map_container').click(function() {
