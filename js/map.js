@@ -88,7 +88,6 @@
             });
 
         } else {
-        alert('zomg');
 
 		/************** LIST BUTTON *****************/
 		document.getElementById("list").style.display="block";
@@ -107,6 +106,7 @@
 			document.getElementById("list").style.display="none";
 			/******************************************/
             $('#map_container').addClass(src);
+            alert(src);
 
             $('#map_container').click(function() {
                 var query = getCookie('query');
