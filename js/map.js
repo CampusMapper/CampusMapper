@@ -54,6 +54,9 @@
         objects.removeClass('.cm-restaurant_map');
         objects.removeClass('.cm-restaurant_bubble_map');
         objects.removeClass('.cm-restaurant_directions_map');
+        objects.removeClass('.cm-classroom_map');
+        objects.removeClass('.cm-classroom_bubble_map');
+        objects.removeClass('.cm-classroom_directions_map');
     }
 
     function init() {
