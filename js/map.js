@@ -164,6 +164,7 @@ $(document).ready(function() {
     });
 
     $('#map').live('pageshow', function() { init() } );
-
     $('#details').live('pageshow', function() { details() } );
+
+    init();
 });
