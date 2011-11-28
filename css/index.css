@@ -55,7 +55,7 @@ span.cm-time {
 #map_container {
     background-repeat:no-repeat;
     background-position:center;
-    background-size: 100% 80%;
+    /* background-size: 100% 80%; */
 }
 
 #list{
