@@ -58,6 +58,8 @@ span.cm-time {
 }
 
 .map_container {
+    position: absolute;
+    top: -10;
     background-repeat:no-repeat;
     background-position:center;
     background-size: 100%;
