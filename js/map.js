@@ -153,7 +153,7 @@
         var footer_height = $("div.ui-footer").height();
 
         var height = total_height - header_height - footer_height;
-        var padding = height/6 - 82; 
+        var padding = height/6 - 62; 
 
         $("a.cm-button-link-wrapper").css("padding-top", "" + padding);
         $("a.cm-button-link-wrapper").css("padding-bottom", "" + padding);
