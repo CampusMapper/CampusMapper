@@ -3,7 +3,7 @@ div.cm-button {
     text-align: center;
 }
 
-div.cm-search-label {
+label.cm-search-label {
     font-weight: bold;
     padding: 10px;
 }
