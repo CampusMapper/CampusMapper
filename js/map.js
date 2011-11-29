@@ -138,7 +138,7 @@
                     src = 'cm-' + query + '_bubble_map';
                 }
 
-                $(this).attr('src', src);
+                $(this).addClass(src)
                 $(this).click(function() {
                     $.mobile.changePage("details.html");
                 });
