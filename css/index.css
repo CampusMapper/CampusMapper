@@ -54,15 +54,15 @@ span.cm-time {
 
 .cm-map-wrapper {
     width: 100%;
-    height: 80%;
+    height: 90%;
 }
 
 .map_container {
     position: absolute;
-    top: -100px;
+    top: 0px;
     background-repeat:no-repeat;
     background-position:center;
-    background-size: 100%;
+    background-size: 100% 82%;
     width: 100%;
     height: 100%;
 }
