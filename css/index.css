@@ -70,7 +70,7 @@ span.cm-time {
     z-index: auto;
 }
 
-#list{
+.list{
       position:fixed;
       bottom:150px;
       left:30px;
