@@ -30,7 +30,8 @@ a.cm-button-link-wrapper {
 }
 
 a.cm-full-footer-button {
-    font-size: 3em !important;
+    font-size: 2.5em !important;
+    line-height: 45px;
 }
 
 h1 {
@@ -51,5 +52,52 @@ span.cm-time {
     float: right;
 }
 
+.cm-map-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+}
+
+.map_container {
+    position: absolute;
+    top: 0px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 100% 84%;
+    width: 100%;
+    height: 100%;
+    z-index: auto;
+}
+
+#list{
+      position:fixed;
+      bottom:150px;
+      left:30px;
+      display:none;
+      z-index:1000;
+}
+.list-float{
+	float:left;
+}
+
+
+
 [data-role=page]{height: 100% !important; position:relative !important;}
 [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}  
+
+.cm-blank_map { background-image:url('../img/blank_map.png'); }
+.cm-blank_bubble_map { background-image:url('../img/blank_bubble_map.png'); }
+.cm-blank_directions_map { background-image:url('../img/blank_directions_map.png'); }
+.cm-wireless_map { background-image:url('../img/wireless_map.png'); }
+.cm-wireless_bubble_map { background-image:url('../img/wireless_bubble_map.png'); }
+.cm-wireless_directions_map { background-image:url('../img/wireless_directions_map.png'); }
+.cm-restaurant_map { background-image:url('../img/restaurant_map.png'); }
+.cm-restaurant_bubble_map { background-image:url('../img/restaurant_bubble_map.png'); }
+.cm-restaurant_directions_map { background-image:url('../img/restaurant_directions_map.png'); }
+.cm-parking_map { background-image:url('../img/parking_map.png'); }
+.cm-parking_bubble_map { background-image:url('../img/parking_bubble_map.png'); }
+.cm-parking_directions_map { background-image:url('../img/parking_directions_map.png'); }
+.cm-classroom_map { background-image:url('../img/classroom_map.png'); }
+.cm-classroom_bubble_map { background-image:url('../img/classroom_bubble_map.png'); }
+.cm-classroom_directions_map { background-image:url('../img/classroom_directions_map.png'); }

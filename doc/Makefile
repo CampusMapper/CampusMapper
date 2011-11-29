@@ -1,5 +1,5 @@
 LATEX=pdflatex
-SOURCE=milestone1.tex log1.tex log2.tex log3.tex log6.tex
+SOURCE=log8.tex
 AUX=$(SOURCE:.tex=.aux)
 LOG=$(SOURCE:.tex=.log)
 TARGETS=$(SOURCE:.tex=.pdf)

@@ -1,69 +1,57 @@
-<head>
-    <! -- need social javascript -->
-    <link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css"
-    rel="stylesheet" type="text/css" />
-    <link href="css/index.css" rel="stylesheet" typ="text/css" />
-    <link href="css/details.css" rel="stylesheet" typ="text/css" />
-    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-    <script src="js/custom_config.js"></script>
-    <script 
-        src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
-</head>
-<body>
-    <div class="cm-page" data-role="page">
-        <div data-role="header">
-            <a href="details.html" data-rel="back" data-direction="reverse"
-                ><img class="cm-header-icon" src="img/arrow_left_48.png" /></a>
-            <h1>Details</h1>
-            <a href="index.html" data-direction="reverse" >
-                <img class="cm-header-icon" src="img/home_48.png" /></a>
-        </div>
-        <div class="cm-content">
-            <div class="cm-details-header">
-                <p><span class="cm-building-name">Building1</span></p>
-                <div class="cm-save-location">
-                    <span class="cm-building-name cm-loc-name">Save this Location</span>
-                    <img src="img/star_off_48.png" class="cm-bookmark" />
-                </div>
-                <div class="cm-details-description">
-                    <div class="cm-details-description-col1">
-                        <p><span class="cm-details-description-header">
-                            Description: </span></p>
-                        <p class="cm-details-description-body">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat.</p>
-                    </div>
-                    <div class="cm-details-description-col2">
-                        <img src="asdf" class="cm-building-image" />
-                    </div>
-                    <div class="cm-checkins">
-                        <p><span class="cm-details-description-header">
-                            Hours: </span></p>
-                        <ul class="cm-hours">
-                            <li>Monday - Friday: 8:00 am to 9:00 pm</li>
-                            <li>Saturday: 12:00 pm to 8:00 pm</li>
-                            <li>Sunday: 12:00 pm to 5:00 pm</li>
-                        </ul>
-                        <p><span class="cm-details-description-header">
-                            Recent Checkins: </span></p>
-                        <ul class="cm-checkins">
-                            <li>John Doe, 12:00 pm, 31/09/12</li>
-                            <li>Jane Pierce, 8:30 am, 24/10/12</li>
-                        </ul>
-                    </div>
-                </div>
+<div id="details" class="cm-page" data-role="page">
+    <div data-role="header">
+        <a href="details.html" data-rel="back" data-direction="reverse"
+            ><img class="cm-header-icon" src="img/arrow_left_48.png" /></a>
+        <h1>Details</h1>
+        <a href="dash.html" data-direction="reverse" >
+            <img class="cm-header-icon" src="img/home_48.png" /></a>
+    </div>
+    <div class="cm-content">
+        <div class="cm-details-header">
+            <p><span class="cm-building-name">Building1</span></p>
+            <div class="cm-save-location">
+                <span class="cm-building-name cm-loc-name">Save this Location</span>
+                <img src="img/bookmark_grey.png" class="cm-bookmark" />
             </div>
-        </div>
-        <div data-role="footer">
-            <div data-role="navbar">
-                <ul>
-                    <li><a class="cm-full-footer-button" href="wirelessmap3.html">
-                        Get Directions</a></li>
-                    <li><a class="cm-full-footer-button" href="floorplan.html">
-                        Show Floorplan</a></li>
-                </ul>
+            <div class="cm-details-description">
+                <div class="cm-details-description-col1">
+                    <p><span class="cm-details-description-header">
+                        Description: </span></p>
+                    <p class="cm-details-description-body">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="cm-details-description-col2">
+                    <img src="img/building.jpg" class="cm-building-image" />
+                </div>
+                <div class="cm-checkins">
+                    <p><span class="cm-details-description-header">
+                        Hours: </span></p>
+                    <ul class="cm-hours">
+                        <li>Monday - Friday: 8:00 am to 9:00 pm</li>
+                        <li>Saturday: 12:00 pm to 8:00 pm</li>
+                        <li>Sunday: 12:00 pm to 5:00 pm</li>
+                    </ul>
+                    <p><span class="cm-details-description-header">
+                        Recent Checkins: </span></p>
+                    <ul class="cm-checkins">
+                        <li>John Doe, 12:00 pm, 31/09/12</li>
+                        <li>Jane Pierce, 8:30 am, 24/10/12</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</body>
+    <div data-role="footer">
+        <div data-role="navbar">
+            <ul>
+                <li><a class="cm-full-footer-button"
+                    href="index.html?directions=true">
+                    Get Directions</a></li>
+                <li><a class="cm-full-footer-button" href="floorplan.html">
+                    Show Floorplan</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
