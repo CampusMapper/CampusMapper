@@ -4,7 +4,10 @@
 \usetheme{Copenhagen}
 
 \title{Campus Mapper}
-\author{Alex Hart\and Corey Young\and Dan Levy\and Jessica Perrie\and Mike McGuire}
+\author[Hart, Young, Levy, Perrie, McGuire]{
+    Alex Hart \and Corey Young \and Dan Levy \\
+    \and Jessica Perrie \and Mike McGuire
+}
 \begin{document}
 
 \begin{frame}
@@ -183,14 +186,11 @@
 \end{frame}
 
 \begin{frame}{Changes from Cognitive Walk Through}
-    \begin{block}{Cognitive Walkthrough Results} 
+    \begin{block}{Cognitive Walkthrough Issues} 
     \begin{itemize}
-        \item Several issues were brought to light
-        \begin{itemize}
-            \item Menu item ``Find'' not intuitive
-            \item What was being bookmarked
-            \item A Cluttered Map
-        \end{itemize}
+        \item Menu item ``Find'' not intuitive
+        \item What was being bookmarked
+        \item A cluttered map
     \end{itemize}
     \end{block}
 \end{frame}
@@ -204,7 +204,7 @@
     \end{columns}
     \begin{itemize}
         \item Removed Find from the dashboard
-        \item Renamed it to Search Map and made it accessable from the Map screen
+        \item Renamed it to Search Map and made it accessible from the Map screen
     \end{itemize}
 \end{frame}
 
@@ -213,7 +213,7 @@
     \column{0.5 \textwidth}
         \center\includegraphics[height=0.5 \textheight]{digital/dashboard.png}
     \column{0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{pre-heuristic/dashboard.png}
     \end{columns}
     \begin{itemize}
         \item Renamed Bookmarks to Saved Locations
@@ -223,61 +223,64 @@
 \begin{frame}{Markers are Confusing}
     \begin{columns}[c]
     \column{0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{digital/map_hotspots.png}
+        \center\includegraphics[height=0.5 \textheight]{digital/map_resturants.png}
     \column{0.5 \textwidth} 
-        \center\includegraphics[height=0.5 \textheight]{final/map_hotspots.png}
+        \center\includegraphics[height=0.5 \textheight]{pre-heuristic/map-restaurant.png}
     \end{columns}
     \begin{itemize}
-        \item changed from floating icons to icons in markers
+        \item Change from floating icons to ``push-pin'' markers
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Changes from the Heuristics Evaluation}
     \begin{block}{Heuristic Evaluation Results} 
     \begin{itemize}
-        \item Several issues were brought to light
-        \begin{itemize}
-            \item Social How?
-            \item TITLE 2
-            \item TITLE 3
-        \end{itemize}
+        \item Main page is now map view
+        \item \emph{Social} is now \emph{Recent check-ins}
+        \item Original main page is now \emph{Dashboard}
+        \item \emph{Search Map} is now \emph{Browse Map}
     \end{itemize}
     \end{block}
 \end{frame}
 
-\begin{frame}{Social how?}
+\begin{frame}{Main page is now Map view}
     \begin{columns}[c]
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final-pre-h/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{pre-heuristic/dashboard.png}
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{post-heuristic/map-blank.png}
     \end{columns}
     \begin{itemize}
-        \item Changed Social to Check-ins for better recognition
+        \item Original main page is now \emph{Dashboard}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{TITLE 2}
+\begin{frame}{Changes to the Dashboard}
     \begin{columns}[c]
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final-pre-h/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{pre-heuristic/dashboard.png}
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{post-heuristic/dashboard.png}
     \end{columns}
     \begin{itemize}
-        \item 
+        \item \emph{Social} renamed to \emph{Recent check-ins}
+        \item \emph{Help} moved from body to header
     \end{itemize}
 \end{frame}
 
-\begin{frame}{TITLE 3}
+\begin{frame}{Changes to the Map view}
     \begin{columns}[c]
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final-pre-h/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{pre-heuristic/map-blank.png}
     \column {0.5 \textwidth}
-        \center\includegraphics[height=0.5 \textheight]{final/dashboard.png}
+        \center\includegraphics[height=0.5 \textheight]{post-heuristic/map-blank.png}
     \end{columns}
     \begin{itemize}
-        \item 
+        \item Search Map is now Browse Map
+        \item Added background to selectable buildings
+        \item Added Check-in pin to blank maps
+        \item Added border to search box
+        \item Added label to indicate the box's function
     \end{itemize}
 \end{frame}
 
@@ -287,11 +290,10 @@
 
 \begin{frame}{Future Work \& Conclusions}
     \begin{itemize}
-        \item General Debugging
-        \item Add Breadcrumbs
-        \item Add proper Help System
-        \item Create new Layout - more appealing colors
-        \item More User Interface Studies
+        \item Application debugging
+        \item Add breadcrumbs
+        \item Add help system
+        \item Create new layout - more appealing colors
     \end{itemize}
 \end{frame}
 \end{document}
