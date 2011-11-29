@@ -178,6 +178,8 @@
     }
 
     $('#index').live('pageshow', function() { 
+        deleteCookie('directions');
+        deleteCookie('query');
         resizeItems();
     });
 
