@@ -130,6 +130,7 @@
             $('.map_container').click(function() {
                 var query = getCookie('query');
                 var src;
+                remove_map_classes();
 
                 if(query === '' || query === null || query === 'undefined') {
                     src = 'cm-blank_bubble_map'
