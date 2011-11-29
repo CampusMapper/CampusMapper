@@ -1,6 +1,7 @@
 div.cm-button {
     margin: auto;
     text-align: center;
+    
 }
 
 label.cm-search-label {
@@ -36,6 +37,8 @@ label.cm-button-label {
 a.cm-button-link-wrapper {
     text-decoration: none;
     display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 a.cm-full-footer-button {

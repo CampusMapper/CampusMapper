@@ -180,7 +180,6 @@
     $('#index').live('pageshow', function() { 
         deleteCookie('directions');
         deleteCookie('query');
-        resizeItems();
     });
 
     $('#map').live('pageshow', function() { init(); } );
