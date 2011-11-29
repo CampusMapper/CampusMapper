@@ -91,8 +91,8 @@
         if(direction === 'true') {
 		
 		/************* LIST BUTTON ****************/
-         $('#list').css('display', 'block');
-		 $('#list').click(function() {
+         $('.list').css('display', 'block');
+		 $('.list').click(function() {
                 $.mobile.changePage('listdirections.html');
             });
 		/******************************************/
@@ -110,8 +110,8 @@
         } else {
 
 		/************** LIST BUTTON *****************/
-		document.getElementById("list").style.display="block";
-		 $('#list').click(function() {
+         $('.list').css('display', 'block');
+		 $('.list').click(function() {
                 $.mobile.changePage('listoptions.html');
             });
 		/******************************************/
@@ -123,7 +123,7 @@
             }
 
 			/************** LIST BUTTON *****************/
-			document.getElementById("list").style.display="none";
+             $('.list').css('display', 'none');
 			/******************************************/
             $('.map_container').addClass(src);
 
