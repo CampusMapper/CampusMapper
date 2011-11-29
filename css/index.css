@@ -3,6 +3,15 @@ div.cm-button {
     text-align: center;
 }
 
+div.cm-search-label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.ui-input-search {
+    border: 2px solid black;
+}
+
 div.cm-button-icon {
 }
 
