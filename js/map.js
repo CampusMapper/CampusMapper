@@ -91,7 +91,7 @@
         if(direction === 'true') {
 		
 		/************* LIST BUTTON ****************/
-		document.getElementById("list").style.display="block"; 
+         $('#list').css('display', 'block');
 		 $('#list').click(function() {
                 $.mobile.changePage('listdirections.html');
             });
