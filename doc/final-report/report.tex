@@ -1,5 +1,7 @@
 \documentclass{report}
 \usepackage{cite}
+\usepackage{graphicx}
+\usepackage{subfig}
 
 \title{CSCI3160 -- CampusMapper Final Report}
 \author{Dan Levy, B00492128 \and Alex Hart, B00537768 \and Jessica Perrie,
@@ -9,17 +11,339 @@ B00536412 \and Mike McGuire, B00 \and Corey Young, B00}
 \begin{document}
 \maketitle
 \tableofcontents
+\listoffigures
+\begin{abstract}
+    \paragraph{The following report outlines the entire process of creating a mobile
+    application for a Smartphone device that aids new university students in
+    navigating the campus and surrounding areas. The main focus of the project was
+    to develop a clean interface that is both intuitive and informative for the end
+    user. Contrasting personas were created for the use-cases to serve in the
+    development process and classmates were used as ‘experts’ for cognitive
+    walkthroughs and heuristic evaluations. jQuery Mobile was used for the web
+    application development and CSS was implemented for styling and layout design.}
+    \paragraph{\emph{Author Keywords: Smartphone, Application, Campus, Navigation}}
+\end{abstract}
 \chapter{Introduction}
+    \paragraph{Dalhousie University consists of 3 campuses that collectively cover
+    roughly 79 acres. On those campuses there are classrooms, restaurants, Wi-Fi
+    hotspots, athletic facilities and more. Our project was to build an application
+    for a Smartphone device that would help students navigate the entire Dalhousie
+    campus and easily locate some of the services the University has to offer. This
+    is especially useful for new students who aren’t familiar with the campus as it
+    can even provide turn-by-turn directions to a specific location. The main focus
+    was the development of the user interface, which was designed to be intuitive
+    for the tech-savvy, and easy to learn for those who are not. There two main
+    stages for the interface design process that provided user feedback; cognitive
+    walkthroughs using a low fidelity (paper) prototype, and heuristic evaluations
+    using a high fidelity (Smartphone web application) prototype. Appropriate
+    changes were made to the application upon the conclusion of each testing phase.}
 \chapter{Background}
+
 \chapter{The Problem}
+
 \chapter{The Design Process}
+    \paragraph{The following subsections describe the approaches taken when
+    designing the system, including brainstorming sessions as well as the different
+    prototyping phases. It provides good insight to how the system was developed, as
+    well as shedding light on how user feedback and our own intuition allowed our
+    platform to evolve throughout the months.}
 \section{Brainstorming Section}
+    \paragraph{Our first step was to decide on the topics needed to be brainstormed.
+    We decided to look at two users [Rob Smith and Condoleezza Fernandez] from very
+    different backgrounds, the applications primary functions and the application
+    design. We used mind-maps to organize our sessions; this allowed for the free
+    forming of information as it was expressed, while imposing few constraints
+    [other than the specified topic].}
+    \paragraph{Initially the mind-maps were done by hand on poster paper, but were
+    then created in the computer for easier updating [if the user needs and
+    software/user interface are changed] and inclusion in documentation. The users
+    maps are detailed below:}
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{img/figure411.jpg}
+        \caption{User 1: Rob Smith Brainstorm}
+    \end{figure}
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{img/figure412.jpg}
+        \caption{User 2: Condoleezza Fernandez Brainstorm}
+    \end{figure}
+    \paragraph{When looking at user persona's we decided it would be best to
+    create one at each end of the computer literacy and/or smart phone experience
+    scale. We looked at two students; one who was born in Canada, taking Business,
+    not very tech-savvy and likes to enjoy himself out. The other is an
+    international student who is in Mechanical Engineering, very tech-savvy, money
+    conscious and on the go.}
+    \paragraph{The tasks we outlined during our initial design meetings were:}
+    \begin{itemize}
+    \item Find/browse for a classroom on campus
+    \item Find the closest wireless hotspot
+    \item Find my next class with directions from current location
+    \item Notify the user if they are late for a class, as well as giving directions to
+    the proper location
+    \item Create a bookmark of the current location
+    \item Find a local restaurant - the closest X
+    \end{itemize}
+    \paragraph{The software's architecture was broken down into two sections -
+    it's primary functions and ideas for the design of the software.}
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{img/figure413.jpg}
+        \caption{Primary Applications Functions Brainstorm}
+    \end{figure}
+    \begin{figure}
+        \centering
+            \includegraphics[width=\textwidth]{img/figure414.jpg}
+        \caption{Applications Design Brainstorm}
+    \end{figure}
+    \paragraph{Our ideas were to either create an Android application, or an web
+    application [which would allow for use on a higher number of platforms]. No
+    matter which platform we would choose, we planned on using Google services
+    [Maps, Search, etc] to simplify the application creation. This would allow the
+    application to meet the primary and secondary functionality requested [showing
+    campus buildings and services, local information, search, etc]. By building a
+    Dalhousie check-in feature, we give the application a social spin.}
+    \paragraph{In the end we chose to program the proof of concept application
+    in HTML using jQuery Mobile as it is platform independent, there is less of a
+    learning curve for the less experienced programmers in the group and it will be
+    quicker to create.}
 \section{Tasks and Users}
+    \paragraph{User Task 1 Task 2 Rob Smith (M, 21) Find a hotspot View
+    check-ins (social feature) Condoleezza Fernandez (F, 23) Find A classroom Late
+    for class notification}
+    \paragraph{The users were chosen from different backgrounds and histories of
+    Smartphone use to provide a proper contrast for the testing process. Rob Smith
+    is a 21 year old Canadian with no history of Smartphone use, and would be
+    primarily interested in the social features of the application. Condoleezza
+    Fernandez is a 23 year old mature student from Argentina who has a history of
+    Smartphone use, and is primarily interested in the academic features of the
+    application. These personas were used for the first testing phase of the
+    application, where each user was given two tasks to complete using the
+    application. These use-cases allowed us to employ the application from a user’s
+    perspective and get a firsthand look at the applications functionality. Each
+    task was assigned a scenario that would showcase the application in a real life
+    setting. E.g. Condoleeza is studying at the Killam Library when the application
+    notifies her that one of her classes begins in 15 minutes. She realizes that her
+    class is just across the street and therefore has a few more minutes of study
+    time. She selects the “Snooze” option which closes the notification. 5 minutes
+    later the reminder pops up and notifies her that her class now begins in 10
+    minutes. Condoleezza closes the notification, packs up her bag, and makes it to
+    class on time.}
 \section{Low-fidelity Prototype}
+    \paragraph{When designing our prototype we decided to model it after many
+    popular social networking applications such as the Facebook or Google+ iPhone
+    and Android applications. This means using a menu bar across the top, for quick
+    navigation buttons, confirmation buttons across the bottom, and grids of icons
+    for menu options with-in the application.}
+    \paragraph{We did a first draft on paper and pencil because this allowed for
+    rapid development and easy changes based on group input. The drawings were
+    scanned and re-created in Adobe Flash for better clarity, coloring and easy
+    transfer into the high fidelity prototype later on. Below are examples of of the
+    low fidelity paper prototype and the digital low fidelity prototype as seen
+    in figure~\ref{fig:lfpaper} and figure~\ref{fig:lfdigital}}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/figure431.png}
+        \caption{Low Fidelity Hand Drawn Prototype}
+        \label{fig:lfpaper}
+    \end{figure}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/figure432.png}
+        \caption{Low Fidelity Digital Prototype}
+        \label{fig:lfdigital}
+    \end{figure}
+    \paragraph{We felt that by taking design influences from Facebook and Google
+    we could leverage some of the time and money they spent while designing these
+    applications. Also, users of our application may be familiar with the common
+    layout if they had previously used either of the previously mentioned
+    applications.}
+    \paragraph{We implemented a category dashboard that allowed us to group all
+    of our applications tasks in logical groups so the user would be able to move
+    through the application with ease.}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/figure433.png}
+        \caption{The Dashboard from the Prototype}
+    \end{figure}
+    \paragraph{Much of what was designed at this stage was kept, as we performed
+    user testing most of what was changed was task names, slight icon changes, and
+    the default screen that the application loads when it is started (straight to
+    the map rather than the dashboard).}
 \section{Cognitive Walkthrough Evaluation and Design of High Fidelity
 Prototype}
+    \paragraph{We next performed cognitive walkthroughs with our low fidelity
+    prototype. During our walkthroughs, our testers found a few issues with our
+    interface:}
+    \begin{enumerate}
+    \item The behaviour of the Find... button on the main screen (Figure
+    \ref{fig:digital-dashboard}) was not intuitive.
+    \item The Bookmarks label on the main page (Figure \ref{fig:digital-dashboard}) was
+    confusing. The testers were not sure what type of the bookmarks the
+    corresponding menu would manage.
+    \item The marker icons on the Maps page (Figure \ref{fig:digital-map}) did not clearly
+    indicate that they were clickable.
+    \item The Social icon (Figure \ref{fig:digital-dashboard}`) was confusing, and did not
+    clearly communicate the function of the Social page.
+    \end{enumerate}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/dashboard.png}
+        \caption{Campus Mapper Main screen, before the cognitive walkthrough changes} 
+        \label{fig:digital-dashboard} 
+    \end{figure}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/map_resturants.png} 
+            % Note that"resturants" is spelled wrong in the filename... 
+        \caption{Campus Mapper Map screen, before the cognitive walkthrough changes}
+        \label{fig:digital-map}
+    \end{figure}
+    \paragraph{We decided to implement the following solutions in our
+    high-fidelity prototype, to fix the issues that were discovered during the
+    cognitive walkthroughs:}
+    \begin{enumerate}
+    \item We removed the Find... icon from the main page. The Find page was renamed to
+    Find services, and can now be accessed from the Map view (Figure
+    \ref{fig:cog-map}).
+    \item We clarified the bookmarks issue by re-labeling the icon, as Saved locations
+    (Figure \ref{fig:cog-dashboard}).
+    \item We switched from floating icons to "Google thumbtack" icons (Figure
+    \ref{fig:cog-map}).
+    \item We changed the Social icon to a compass rose icon, as suggested by one of our
+    testers (Figure \ref{fig:cog-dashboard}).
+    \end{enumerate}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/cw_dashboard.png}
+        \caption{Campus Mapper Main screen, after the cognitive walkthrough changes} 
+        \label{fig:cog-dashboard} 
+    \end{figure}
+    \begin{figure}
+        \centering
+            \includegraphics[height=3in]{img/cw_map-restaurant.png}
+        \caption{Campus Mapper Map screen, after the cognitive walkthrough changes} 
+        \label{fig:cog-map} 
+    \end{figure}
+    \paragraph{We made two additional changes as we implemented our
+    high-fidelity prototype:}
+    \begin{enumerate}
+    \item We re-titled the building details pages, from the specific building
+    name to the static title "Details". The building name is now contained within
+    the dynamic portion of each building details page.
+    \item We moved the bookmark icon (a star) to the top of the building details
+    page; it is now adjacent to the title.
+    \end{enumerate}
 \section{Heuristic Evaluation}
+    \paragraph{In the last round of evaluation, several changes were made, some
+    of which seem minor, but all of which led to a better overall application. The
+    largest change during this stage was changing the default screen the user would
+    see, as many people wanted to have the map be their first point of contact with
+    the application. There were also several name changes. All of the requested and
+    implemented changes are summarized in this section, as well as the methods that
+    were employed in order to generate these results.}
+    \paragraph{The heuristic evaluation involved using our high fidelity
+    prototype on a final subset of the class, in order to see how our changes
+    between the low level and high level designs were being taken, and to gather
+    feedback about what else could be changed. This involved letting two people run
+    through our use cases with the new system, one female and one male. We allowed
+    the person to make notes on a handout we gave them for each use case, as well as
+    took notes ourselves in order to gather as much information as possible. We also
+    discussed issues as we went along, and helped to guide the user through the work
+    flows as needed.}
+    \paragraph{As mentioned in the introductory paragraph of this section, one
+    of the biggest features people wanted to see was the map view as the main page
+    of the project. Also, there were several labeling issues that would be taken
+    care of in this stage. As can be seen in figure \ref{fig:heuristic-primary}, we have moved from the
+    main screen being a sort of dashboard to it being a blank map view. We have also
+    renamed "Search Map" to "Browse...", giving a clearer implication of what the
+    user should expect to see when they hit the button. Furthermore, it was noted
+    that the Search query box on the find page was not very clear, and thus it was
+    given a clear label and a border. The difference can be seen in figure
+    \ref{fig:heuristic-find}.
+    Also note, due to popular demand, school buildings have been highlighted blue in
+    an attempt to make them stand out more. People were confused, and unaware that
+    the buildings were clickable, and this new coloring scheme aims to solve this
+    problem.}
+    \begin{figure}
+    \centering
+    \subfloat[Old Main View]{
+        \includegraphics[height=3in]{img/pre-dashboard.png}}
+    \subfloat[New Main View]{
+        \includegraphics[height=3in]{img/post-map.png}}
+    \caption{Old and new primary view}
+    \label{fig:heuristic-primary}
+    \end{figure}
+    \begin{figure}
+    \centering
+    \subfloat[Old Main View]{
+        \includegraphics[height=3in]{img/pre-find.png}}
+    \subfloat[New Main View]{
+        \includegraphics[height=3in]{img/post-find.png}}
+    \caption{Old and new find page}
+    \label{fig:heuristic-find}
+    \end{figure}
+    \paragraph{Further changes are also evident on the dashboard. It can be
+    noted in both figure \ref{fig:heuristic-primary} and figure 
+    \ref{fig:heuristic:find} that the home icon has been changed
+    to a dashboard icon. In addition, the help icon and saved locations icon have
+    been removed from the content section of the dashboard. The help icon has been
+    placed in the upper right hand corner of the dashboard, and the saved locations
+    is now located solely on the map view. These changes can be seen in figure
+    \ref{fig:heuristic-dashboard}. This was due to our own concerns, as we felt that it was redundant to
+    have this in both locations. Also noticeable on the dashboard is the change of
+    the label social, to a more appropriate title. This was due to people not being
+    aware of exactly what social was intended for. Thus, we believe that 'recent
+    checkins' allows for a more explicit term of operation. Finally, the dialog was
+    given a line of text indicating the snooze time, as people were not aware of how
+    long this would be set for. The new dashboard can be seen in figure
+    \ref{fig:heuristic-dialog}.}
+    \begin{figure}
+    \centering
+    \subfloat[Old Main View]{
+        \includegraphics[height=3in]{img/pre-dashboard.png}}
+    \subfloat[New Dashboard View]{
+        \includegraphics[height=3in]{img/post-dashboard.png}}
+    \caption{Old and new dashboard.}
+    \label{fig:heuristic-dashboard}
+    \end{figure}
+    \begin{figure}
+    \centering
+        \includegraphics[height=3in]{img/post-dialog.png}
+    \caption{New Reminder Dialog}
+    \label{fig:heuristic-dialog}
+    \end{figure}
 \chapter{Conclusions and Future Work}
+    \paragraph{Beginning with a simple brainstorming session, the project started to
+    grow legs. We took the results of the brainstorm and put together a paper based
+    prototype, modeling the interface after similar products offered by Google that
+    we ourselves has used, and deemed to be ideal. The paper prototypes were used
+    for cognitive walkthroughs, giving the testers a firsthand look at the
+    functionality of the application. The feedback from the testing was implemented
+    to make subtle changes, such as the labeling or location of certain features.
+    This provided the framework for the development of the high fidelity prototype,
+    which was built with jQuery Mobile and CSS.}
+    \paragraph{After rounds of testing and applying valuable user feedback into the
+    development of our application, we had completed the requirements for the
+    application, designed an easy to use interface, and had given it the name
+    ‘Campus Mapper’.}
+    \paragraph{As it was previously stated, our goal for this project was to develop
+    a Smartphone application that helped new and returning students in navigating
+    the Dalhousie campus. Since the primary focus was on creating a user friendly
+    interface, the program itself is not fully functional, as there was insufficient
+    time to make that happen in a single term. If we were to continue working on our
+    application, there are a few minor changes we would implement to make it even
+    more useful. First off, it was decided in the late stages of user testing that
+    the program would ideally load the map screen on startup and have the user
+    access the ‘find’ features from this screen, essentially combing the two most
+    commonly used aspects into a single interface. We would also invest more effort
+    into either creating or buying a set of application-icons that would be unique
+    to our program.}
+    \paragraph{The application we created could easily be extended into a fully
+    functional website for the university where features such as finding directions
+    could be printed off instead of only being viewed from a handheld device. This
+    way Dalhousie students who do not own a Smartphone would still be able to take
+    advantage of what our program has to offer.}
 \bibliography{bib}{}
 \bibliographystyle{acm}
 \end{document}
