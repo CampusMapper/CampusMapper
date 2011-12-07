@@ -4,5 +4,6 @@
 *.aux
 *.zip
 *.swp
+*.lof
 *.tar.gz
 icons/
